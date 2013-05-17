@@ -1,0 +1,110 @@
+html{ padding:0; margin:0; height:100%;}
+body { background-color:#82CAFF; padding:0; margin:0; height:100%;font-family: 'Candal', sans-serif;font-size:16px;}
+
+#main{width:80%; margin: 0 auto; }
+
+#main #search {width:300px; padding:40px 80px; margin: 0 auto; position:relative; top:35%;
+	-webkit-border-radius: 4px;
+	-moz-border-radius: 4px;
+	border-radius: 4px;
+	background-image: url(../img/black-bg.png);
+}
+#head {width:100%; height:40px; background-color:#222222; border-bottom:1px solid #B2B2B2;}
+#head #inner{width:80%; margin: 0 auto; color:#fff;} 
+#head #inner #logo { letter-spacing:-2px; float:left; font-weight:600; padding-top:7px; font-size:1.2em;}
+#head #inner #by {float:right;font-weight:300; padding-top:13px; font-size:.8em;}
+#head #inner #by a{color:#fff; padding:4px;
+-moz-border-radius: 4px;
+-webkit-border-radius: 4px;
+border-radius: 4px; 
+-webkit-transition: all 0.6s ease-out 0s;
+-moz-transition: all 0.6s ease-out 0s;
+transition: all 0.6s ease-out 0s;}
+#head #inner #by a:hover{color:#222; background-color:#fff; text-decoration:none;}
+
+#main #center {}
+#main #center #search-wrapper {padding-top:25%;}
+#main #center #search p {color:#fff; letter-spacing:-1px; font-weight:200;}
+#main #center #search #location{color:#b6b6b6;}
+
+#main #center #message{font-family:arial; width:460px; margin: 0 auto; margin-top:40px;font-size:21px;text-shadow: 2px 2px 2px rgba(150, 150, 150, .5);}
+#main #center #message p#error {display:none; color:red;}
+#main #center #message p#weather {display:none; padding-bottom:40px;}
+#main #center #SC_controls {display:none;}
+#main #center #SC_controls #target{text-align:center;}
+#main #center #load {text-align:center; display:none;}
+#main #center a#next{float:right;background-image: url(../img/black-bg.png); padding: 8px 14px; color:#fff; font-size:10px;}
+
+/**********************************************************************************************
+    PREFIXED CSS FOR LOADING BOX ANNIMATION
+**********************************************************************************************/
+
+@keyframes changecolor1{
+    0%{fill:#b5b5b5;}
+    33%{fill:#7c7c7c;}
+    66%{fill:#4a4a4a;}
+    100%{fill:#b5b5b5;}
+}
+@keyframes changecolor2{
+    0%{fill:#4a4a4a;}
+    33%{fill:#b5b5b5;}
+    66%{fill:#7c7c7c;}
+    100%{fill:#4a4a4a;}
+}
+ @keyframes changecolor3{
+    0%{fill:#7c7c7c;}
+    33%{fill:#4a4a4a;}
+    66%{fill:#b5b5b5;}
+    100%{fill:#7c7c7c;}
+}
+
+@-webkit-keyframes changecolor1{
+    0%{fill:#b5b5b5;}
+    33%{fill:#7c7c7c;}
+    66%{fill:#4a4a4a;}
+    100%{fill:#b5b5b5;}
+}
+@-webkit-keyframes changecolor2{
+    0%{fill:#4a4a4a;}
+    33%{fill:#b5b5b5;}
+    66%{fill:#7c7c7c;}
+    100%{fill:#4a4a4a;}
+}
+ @-webkit-keyframes changecolor3{
+    0%{fill:#7c7c7c;}
+    33%{fill:#4a4a4a;}
+    66%{fill:#b5b5b5;}
+    100%{fill:#7c7c7c;}
+}
+
+@-moz-keyframes changecolor1{
+    0%{fill:#b5b5b5;}
+    33%{fill:#7c7c7c;}
+    66%{fill:#4a4a4a;}
+    100%{fill:#b5b5b5;}
+}
+@-moz-keyframes changecolor2{
+    0%{fill:#4a4a4a;}
+    33%{fill:#b5b5b5;}
+    66%{fill:#7c7c7c;}
+    100%{fill:#4a4a4a;}
+}
+ @-moz-keyframes changecolor3{
+    0%{fill:#7c7c7c;}
+    33%{fill:#4a4a4a;}
+    66%{fill:#b5b5b5;}
+    100%{fill:#7c7c7c;}
+}
+
+.light{
+    animation: changecolor1 2s infinite;
+    -webkit-animation: changecolor1 2s infinite;
+    -moz-animation: changecolor1 2s infinite;}
+.med{
+    animation: changecolor2 2s infinite;
+    -webkit-animation: changecolor2 2s infinite;
+    -moz-animation: changecolor2 2s infinite;}
+.dark{
+    animation: changecolor3 2s infinite;
+    -webkit-animation: changecolor3 2s infinite;
+    -moz-animation: changecolor3 2s infinite;}
